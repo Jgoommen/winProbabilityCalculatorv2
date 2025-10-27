@@ -10,7 +10,12 @@ Since the official KenPom website is subscription-blocked, I had to use a clouds
 
 I used adjusted offensive/defensive efficiency, adjusted tempo alongside league averages of tempo and efficiency to calculate scores. I used offensive/defensive efficiency to approximate the scoring capability of both teams, and then calculated the approximate tempo to find the possessions in a game. Combining the two is how I was able to estimate the final score.
 
-I calculated the win probability by finding the difference in scores and using a normal CDF function from scipy
+I calculated the win probability by finding the difference in scores and using a normal CDF function from SciPy
+
+Streamlit Cloud App: https://winprobabilitycalculatorv2.streamlit.app/ 
+
+UPDATE: Streamlit/KenPom have recently updated their sites to automatically block scraping from popular site hosts. To work around this, I needed to webscrape the kenpom data locally and save the data as a csv. I then used this csv as my data for the main program. When running the program locally there is no change needed.
+
 
 ---
 
@@ -31,10 +36,11 @@ I used data scraped directly from the KenPom website. I collected everything on 
 2. Install the required libraries;
    ```bash
    pip install streamlit, cloudscraper, pandas, bs4, io, scipy.stats, re
+2. Run scrape_kenpom.py to save the csv data
 3. Run the streamlit app
    ```bash
-   streamlit run winProbability.py
-
+   streamlit run winProbabilityv2.py
+   
 ---
 
 ## ⛹🏽‍♂️ Bracket Performance
