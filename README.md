@@ -14,7 +14,8 @@ I calculated the win probability by finding the difference in scores and using a
 
 Streamlit Cloud App: https://winprobabilitycalculatorv2.streamlit.app/ 
 
-UPDATE: Streamlit/KenPom have recently updated their sites to automatically block scraping from popular site hosts. To work around this, I needed to webscrape the kenpom data locally and save the data as a csv. I then used this csv as my data for the main program. When running the program locally there is no change needed.
+UPDATE: Streamlit/KenPom have recently updated their sites to automatically block scraping from popular site hosts. To work around this, I needed to webscrape the kenpom data locally and save the data as a csv. I then used this csv as my data for the main program. 
+        When running the program locally, there is no change needed, and you can simply combine the scrap_kenpom and winProbabilityv2 files, just save the webscraped data as a DataFrame instead of a csv
 
 
 ---
