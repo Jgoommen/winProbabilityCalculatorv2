@@ -12,7 +12,7 @@ I used adjusted offensive/defensive efficiency, adjusted tempo alongside league 
 
 I calculated the win probability by finding the difference in scores and using a normal CDF function from SciPy
 
-Streamlit Cloud App: https://winprobabilitycalculatorv2.streamlit.app/ 
+Streamlit Cloud App: [https://winprobabilitycalculatorv2.streamlit.app/](https://winprobabilitycalculatorv2.streamlit.app/) 
 
 UPDATE: Streamlit/KenPom have recently updated their sites to automatically block scraping from popular site hosts. To work around this, I needed to webscrape the kenpom data locally and save the data as a csv. I then used this csv as my data for the main program. 
 
