@@ -1,6 +1,7 @@
 cloudscraper
 pandas
-streamlit
+streamlit>=1.30.0
 bs4
 scipy
 lxml
+altair<5
